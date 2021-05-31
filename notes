@@ -1,0 +1,26 @@
+Units
+
+
+[ 'ml', 'l', 'tsp', 'Tbs', 'fl-oz', 'cup', 'gal' ]
+[ 'mg', 'g', 'kg', 'oz', 'lb' ]
+
+VOLUME
+Teaspoon
+Tablespoon
+Cup
+-
+Mililiters
+
+WEIGHT
+Ounce
+Pounds
+-
+Grams
+Kilos
+
+Color #222767 pale yellow
+Darker blues
+Thin black outline
+Squared off
+
+https://api.github.com/repos/jeremyjacob/AccidentalChef/git/trees/main?recursive=1
