@@ -1,4 +1,5 @@
 import preprocess from 'svelte-preprocess';
+import netlify from '@sveltejs/adapter-netlify';
 import svelte from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,7 +10,8 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		adapter: netlify
 	}
 };
 
