@@ -1,4 +1,4 @@
 [build]
   command = "yarn build"
-  publish = "accidental-chef/.svlete-kit/build"
-  functions = "accidental-chef/.svlete-kit/funcitons"
+  publish = ".svlete-kit/build"
+  functions = ".svlete-kit/funcitons"
