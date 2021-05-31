@@ -1,0 +1,28 @@
+{
+	"name": "Test Recipe",
+	"time": 120,
+	"serves": 5,
+	"intro": "",
+	"outro": "",
+	"image": "",
+	"ingredients": [
+		{
+			"name": "Fine sea salt",
+			"amount": [1, "tsp"],
+			"noScale": true
+		},
+		{
+			"name": "Garlic cloves",
+			"amount": [4]
+		}
+	],
+	"steps": [
+		{
+			"content": "content"
+		},
+		{
+			"breakGlass": true,
+			"content": "content"
+		}
+	]
+}
