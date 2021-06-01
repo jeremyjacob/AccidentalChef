@@ -6,5 +6,12 @@
 </script>
 
 <div class="content">
-	{id}
+	<h1>Recipe</h1>
 </div>
+
+<style lang="less">
+	div.content {
+		display: flex;
+		justify-content: center;
+	}
+</style>
