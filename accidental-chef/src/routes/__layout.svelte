@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Header from '$lib/header.svelte';
-	import { fade } from 'svelte/transition';
 	import '../styles/app.less';
 	import '../styles/variables.less';
 </script>

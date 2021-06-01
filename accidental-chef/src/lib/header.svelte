@@ -71,7 +71,7 @@
 					opacity: 1;
 					clip-path: inset(0);
 					transition: all 0.32s cubic-bezier(0.19, 0.13, 0.34, 0.99);
-					transition-delay: 0.2s;
+					transition-delay: 0.23s;
 				}
 			}
 		}

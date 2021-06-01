@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
 	import { quartOut } from 'svelte/easing';
-	export let recipe: Recipe;
+	import { onDestroy } from 'svelte';
+	export let recipe;
 	export let index;
 
 	const slide = (node, { duration, delay = 0 }) => ({
@@ -14,11 +17,20 @@
             `;
 		}
 	});
+
+	const click = (e: MouseEvent) => {
+		e.preventDefault();
+		setTimeout(() => {
+			goto('/recipes/' + recipe.file);
+		}, 10);
+	};
 </script>
 
 <div class="card" in:slide={{ duration: 500, delay: index * 50 }}>
-	<img src={recipe.image} alt="" />
-	<h2>{recipe.name}</h2>
+	<a href="/{recipe.file}" on:click={click}>
+		<img src={recipe.image} alt="" />
+		<h2>{recipe.name}</h2>
+	</a>
 </div>
 
 <style lang="less">
@@ -30,14 +42,20 @@
 		padding: 1em;
 		border: 1px solid black;
 		overflow: hidden;
+		box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+		cursor: pointer;
 
-		img {
-			width: 100%;
-		}
+		a {
+			text-decoration: none;
 
-		h2 {
-			font-size: 1.1em;
-			margin-top: 0.4em;
+			img {
+				width: 100%;
+			}
+
+			h2 {
+				font-size: 1.1em;
+				margin-top: 0.4em;
+			}
 		}
 	}
 </style>
