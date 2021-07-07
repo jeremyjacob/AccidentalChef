@@ -1,12 +1,12 @@
 [
     {
-        "name": "Yo Po Mian",
-        "file": "yo-po-mian",
+        "title": "Yo Po Mian",
+        "name": "yo-po-mian",
         "time": 20,
     },
     {
-        "name": "Yo Po Mian 2",
-        "file": "yo-po-mian2",
+        "title": "Yo Po Mian 2",
+        "name": "yo-po-mian2",
         "time": 20,
     }
 ]
